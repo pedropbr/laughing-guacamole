@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Useful Links</h1>
+
+  <ul class="post-list">
+    {% for link in site.data.contentful.spaces.links.twitter %}
+      <li>
+        <h2><{{ link.sys.id }}</h2>
+        <p>{{ link.body }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
