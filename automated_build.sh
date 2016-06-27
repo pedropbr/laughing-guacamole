@@ -4,7 +4,7 @@ CWD=`pwd`
 # Clone Pages repo
 cd /tmp
 git clone laughing-guacamole build
-cd build && git checkout -b master # If not using master
+cd build && git checkout -b gh-pages # If not using master
 
 # Trigger Jekyll rebuild
 cd $CWD
