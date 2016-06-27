@@ -20,4 +20,4 @@ git config --global user.name "pedropbr"
 
 git add .
 git commit -m "Automated Rebuild"
-git push -f origin gh_pages
+git push -f origin gh-pages
