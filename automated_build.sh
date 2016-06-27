@@ -8,7 +8,8 @@ cd build && git checkout -b gh-pages origin/gh-pages
 
 # Trigger Jekyll rebuild
 cd $CWD
-bundle exec jekyll contentful --rebuild
+bundle exec jekyll contentful
+bundle exec jekyll build
 
 # Push newly built repo
 cp -r $CWD/_site/* /tmp/build
