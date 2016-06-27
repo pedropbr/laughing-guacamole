@@ -4,10 +4,7 @@ machine:
 dependencies:
   pre:
     - gem install bundler
-deployment:
-  master:
-    branch: master
-    owner: circleci
-    commands:
-      - bundle install
-      - bash automated_script.sh
+checkout:
+  post:
+    - bundle install
+    - bash automated_build.sh
